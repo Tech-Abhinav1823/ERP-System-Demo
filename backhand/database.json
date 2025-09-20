@@ -93,14 +93,6 @@
       "date": "2025-09-10",
       "type": "finance",
       "from": "admin"
-    },
-    {
-      "id": 3,
-      "title": "heelo puttcu",
-      "content": "muhhhhh",
-      "date": "2025-09-19",
-      "type": "general",
-      "from": "teacher"
     }
   ],
   "exam_schedule": [
