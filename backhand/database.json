@@ -1,0 +1,135 @@
+{
+  "students": [
+    {
+      "id": "ST001",
+      "name": "Rahul Sharma",
+      "email": "rahul@college.edu",
+      "password": "student123",
+      "course": "Computer Science",
+      "year": 2,
+      "fee_status": "Unpaid",
+      "fee_amount": 50000,
+      "hostel_room": "A-101",
+      "attendance": 18,
+      "total_classes": 24,
+      "notifications": [
+        "zdv",
+        "kk",
+        "heelo puttcu"
+      ]
+    },
+    {
+      "id": "ST002",
+      "name": "Priya Singh",
+      "email": "priya@college.edu",
+      "password": "student456",
+      "course": "Electronics",
+      "year": 3,
+      "fee_status": "Paid",
+      "fee_amount": 48000,
+      "hostel_room": "B-203",
+      "attendance": 20,
+      "total_classes": 25,
+      "notifications": [
+        "Exam schedule released",
+        "heelo puttcu"
+      ]
+    },
+    {
+      "id": "ST003",
+      "name": "Arjun Mehta",
+      "email": "arjun@college.edu",
+      "password": "student789",
+      "course": "Mechanical",
+      "year": 1,
+      "fee_status": "Unpaid",
+      "fee_amount": 52000,
+      "hostel_room": "C-305",
+      "attendance": 15,
+      "total_classes": 23,
+      "notifications": [
+        "Hostel mess fee due",
+        "heelo puttcu"
+      ]
+    }
+  ],
+  "teachers": [
+    {
+      "id": "T001",
+      "name": "Amit Verma",
+      "email": "amit@college.edu",
+      "password": "teacher123",
+      "department": "Mathematics"
+    },
+    {
+      "id": "T002",
+      "name": "Neha Gupta",
+      "email": "neha@college.edu",
+      "password": "teacher456",
+      "department": "Electronics"
+    }
+  ],
+  "admin": [
+    {
+      "id": "A001",
+      "name": "Admin",
+      "email": "admin@college.edu",
+      "password": "admin123"
+    }
+  ],
+  "announcements": [
+    {
+      "id": 1,
+      "title": "Welcome",
+      "content": "Semester begins next week.",
+      "date": "2025-09-01",
+      "type": "general",
+      "from": "admin"
+    },
+    {
+      "id": 2,
+      "title": "Fee Reminder",
+      "content": "Submit your pending fees before 30th September.",
+      "date": "2025-09-10",
+      "type": "finance",
+      "from": "admin"
+    },
+    {
+      "id": 3,
+      "title": "heelo puttcu",
+      "content": "muhhhhh",
+      "date": "2025-09-19",
+      "type": "general",
+      "from": "teacher"
+    }
+  ],
+  "exam_schedule": [
+    {
+      "subject": "Mathematics",
+      "date": "2025-09-20",
+      "time": "10:00 AM",
+      "type": "Mid-sem"
+    },
+    {
+      "subject": "Electronics",
+      "date": "2025-09-22",
+      "time": "02:00 PM",
+      "type": "Mid-sem"
+    },
+    {
+      "subject": "Mechanical",
+      "date": "2025-09-24",
+      "time": "11:00 AM",
+      "type": "Mid-sem"
+    }
+  ],
+  "fee_stats": {
+    "total_students": 3,
+    "paid": 1,
+    "unpaid": 2
+  },
+  "hostel_rooms": {
+    "occupied": 152,
+    "available": 48
+  }
+}

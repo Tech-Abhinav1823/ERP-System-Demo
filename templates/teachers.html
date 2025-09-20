@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teacher Dashboard - College ERP</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="user-info">
+          <h1>Teacher</h1>
+          <div>
+            <span>Welcome, {{ user.name }}!</span>
+            <a href="/logout" class="logout-btn">Logout</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard-grid">
+        <!-- Mark Attendance -->
+        <div class="card">
+          <h3>Mark Attendance</h3>
+          <form id="attendanceForm">
+            <div class="form-group">
+              <label for="student_select">Select Student:</label>
+              <select id="student_select" name="student_id" required>
+                <option value="">Choose a student</option>
+                {% for student in students %}
+                <option value="{{ student.id }}">
+                  {{ student.name }} ({{ student.id }})
+                </option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="attendance_status">Status:</label>
+              <select id="attendance_status" name="status" required>
+                <option value="present">Present</option>
+                <option value="absent">Absent</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-success">
+              Mark Attendance
+            </button>
+          </form>
+          <div id="attendanceMessage" style="margin-top: 10px"></div>
+        </div>
+
+        <!-- Add Announcement -->
+        <div class="card">
+          <h3>Post Announcement</h3>
+          <form id="announcementForm">
+            <div class="form-group">
+              <label for="announcement_title">Title:</label>
+              <input
+                type="text"
+                id="announcement_title"
+                name="title"
+                placeholder="Announcement title"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="announcement_content">Content:</label>
+              <textarea
+                id="announcement_content"
+                name="content"
+                placeholder="Announcement details"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-info">
+              Post Announcement
+            </button>
+          </form>
+          <div id="announcementMessage" style="margin-top: 10px"></div>
+        </div>
+      </div>
+
+      <!-- Student List -->
+      <div class="card">
+        <h3>Student List & Attendance Overview</h3>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Year</th>
+                <th>Attendance</th>
+                <th>Attendance %</th>
+                <th>Fee Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for student in students %}
+              <tr>
+                <td>{{ student.id }}</td>
+                <td>{{ student.name }}</td>
+                <td>{{ student.course }}</td>
+                <td>{{ student.year }}</td>
+                <td>{{ student.attendance }}/{{ student.total_classes }}</td>
+                <td>
+                  {{ ((student.attendance / student.total_classes) * 100) |
+                  round(1) if student.total_classes > 0 else 0 }}%
+                </td>
+                <td>
+                  <span
+                    class="status {{ 'paid' if student.fee_status == 'Paid' else 'unpaid' }}"
+                    >{{ student.fee_status }}</span
+                  >
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Recent Announcements -->
+      <div class="card">
+        <h3>Recent Announcements</h3>
+        {% if announcements %} {% for announcement in announcements %}
+        <div class="notification">
+          <h4>{{ announcement.title }}</h4>
+          <p>{{ announcement.content }}</p>
+          <small
+            >Posted on: {{ announcement.date }} by {{ announcement.from
+            }}</small
+          >
+        </div>
+        {% endfor %} {% else %}
+        <p>No announcements available.</p>
+        {% endif %}
+      </div>
+    </div>
+
+    <script>
+      /**
+       * Reusable function to handle form submissions via Fetch API.
+       * @param {Event} e The form submission event.
+       * @param {string} url The endpoint to submit the form to.
+       * @param {string} messageDivId The ID of the element to display messages in.
+       * @param {string} successMessage The message to show on success.
+       */
+      function handleFormSubmit(e, url, messageDivId, successMessage) {
+        e.preventDefault();
+        const form = e.target;
+        const formData = new FormData(form);
+        const messageDiv = document.getElementById(messageDivId);
+
+        fetch(url, {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.success) {
+              messageDiv.innerHTML = `<div class="toast success">${successMessage}</div>`;
+              form.reset();
+              setTimeout(() => location.reload(), 1500);
+            } else {
+              messageDiv.innerHTML = `<div class="toast error">Error: ${
+                data.error || "An unknown error occurred."
+              }</div>`;
+            }
+          })
+          .catch((error) => {
+            messageDiv.innerHTML = `<div class="toast error">Request failed: ${error.message}</div>`;
+          });
+      }
+
+      // Attach event listeners
+      document
+        .getElementById("attendanceForm")
+        .addEventListener("submit", (e) =>
+          handleFormSubmit(
+            e,
+            "/mark_attendance",
+            "attendanceMessage",
+            "Attendance marked successfully!"
+          )
+        );
+      document
+        .getElementById("announcementForm")
+        .addEventListener("submit", (e) =>
+          handleFormSubmit(
+            e,
+            "/add_announcement",
+            "announcementMessage",
+            "Announcement posted successfully!"
+          )
+        );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - OrbitCore</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="user-info">
+          <h1>Admin</h1>
+          <div>
+            <span>Welcome, {{ user.name }}!</span>
+            <a href="/logout" class="logout-btn">Logout</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3>{{ students|length }}</h3>
+          <p>Total Students</p>
+        </div>
+        <div class="stat-card">
+          <h3>
+            {{ students|selectattr("fee_status", "equalto", "Paid")|list|length
+            }}
+          </h3>
+          <p>Fees Paid</p>
+        </div>
+        <div class="stat-card">
+          <h3>
+            {{ students|selectattr("fee_status", "equalto",
+            "Unpaid")|list|length }}
+          </h3>
+          <p>Fees Pending</p>
+        </div>
+        <div class="stat-card">
+          <h3>150</h3>
+          <p>Hostel Rooms Occupied</p>
+        </div>
+      </div>
+
+      <div class="dashboard-grid">
+        <!-- Add New Student -->
+        <div class="card">
+          <h3>Add New Student</h3>
+          <form id="addStudentForm">
+            <div class="form-group">
+              <label for="student_name">Name:</label>
+              <input
+                type="text"
+                id="student_name"
+                name="name"
+                placeholder="Student full name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="student_email">Email:</label>
+              <input
+                type="email"
+                id="student_email"
+                name="email"
+                placeholder="student@college.edu"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="student_course">Course:</label>
+              <select id="student_course" name="course" required>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Mechanical">Mechanical</option>
+                <option value="Civil">Civil</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="student_year">Year:</label>
+              <select id="student_year" name="year" required>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fee_amount">Fee Amount:</label>
+              <input
+                type="number"
+                id="fee_amount"
+                name="fee_amount"
+                placeholder="50000"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="hostel_room">Hostel Room:</label>
+              <input
+                type="text"
+                id="hostel_room"
+                name="hostel_room"
+                placeholder="A-101"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-success">Add Student</button>
+          </form>
+          <div id="addStudentMessage" style="margin-top: 10px"></div>
+        </div>
+
+        <!-- Post Announcement -->
+        <div class="card">
+          <h3>Post Institute Announcement</h3>
+          <form id="adminAnnouncementForm">
+            <div class="form-group">
+              <label for="admin_announcement_title">Title:</label>
+              <input
+                type="text"
+                id="admin_announcement_title"
+                name="title"
+                placeholder="Announcement title"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="admin_announcement_content">Content:</label>
+              <textarea
+                id="admin_announcement_content"
+                name="content"
+                placeholder="Announcement details"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-info">
+              Post Announcement
+            </button>
+          </form>
+          <div id="adminAnnouncementMessage" style="margin-top: 10px"></div>
+        </div>
+      </div>
+
+      <!-- Charts Section -->
+      <div class="dashboard-grid">
+        <div class="card">
+          <h3>Fee Collection Status</h3>
+          <div id="feeChart" class="chart-container"></div>
+        </div>
+        <div class="card">
+          <h3>Hostel Occupancy</h3>
+          <div id="hostelChart" class="chart-container"></div>
+        </div>
+      </div>
+
+      <!-- Student Management -->
+      <div class="card">
+        <h3>Student Management</h3>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Year</th>
+                <th>Fee Status</th>
+                <th>Fee Amount</th>
+                <th>Hostel Room</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for student in students %}
+              <tr>
+                <td>{{ student.id }}</td>
+                <td>{{ student.name }}</td>
+                <td>{{ student.course }}</td>
+                <td>{{ student.year }}</td>
+                <td>
+                  <span
+                    class="status {{ 'paid' if student.fee_status == 'Paid' else 'unpaid' }}"
+                    >{{ student.fee_status }}</span
+                  >
+                </td>
+                <td>₹{{ student.fee_amount }}</td>
+                <td>{{ student.hostel_room }}</td>
+                <td>
+                  {% if student.fee_status == 'Unpaid' %}
+                  <button
+                    onclick="updateFeeStatus('{{ student.id }}')"
+                    class="btn btn-success"
+                  >
+                    Mark Paid
+                  </button>
+                  {% else %}
+                  <span class="status paid">Paid</span>
+                  {% endif %}
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Recent Announcements -->
+      <div class="card">
+        <h3>All Announcements</h3>
+        {% if announcements %} {% for announcement in announcements %}
+        <div class="notification">
+          <h4>{{ announcement.title }}</h4>
+          <p>{{ announcement.content }}</p>
+          <small
+            >Posted on: {{ announcement.date }} by {{ announcement.from
+            }}</small
+          >
+        </div>
+        {% endfor %} {% else %}
+        <p>No announcements available.</p>
+        {% endif %}
+      </div>
+    </div>
+
+    <script>
+      // Initialize charts
+      document.addEventListener('DOMContentLoaded', function() {
+          // Fee Chart
+          var feeData = {{ fee_graph|safe }};
+          Plotly.newPlot('feeChart', feeData, {
+              title: 'Fee Collection Status',
+              showlegend: true,
+              height: 300
+          });
+
+          // Hostel Chart
+          var hostelData = {{ hostel_graph|safe }};
+          Plotly.newPlot('hostelChart', hostelData, {
+              title: 'Hostel Room Status',
+              xaxis: { title: 'Room Status' },
+              yaxis: { title: 'Number of Rooms' },
+              height: 300
+          });
+      });
+
+      /**
+       * Reusable function to handle form submissions via Fetch API.
+       * @param {Event} e The form submission event.
+       * @param {string} url The endpoint to submit the form to.
+       * @param {string} messageDivId The ID of the element to display messages in.
+       * @param {string} successMessage The message to show on success.
+       */
+      function handleFormSubmit(e, url, messageDivId, successMessage) {
+        e.preventDefault();
+        const form = e.target;
+        const formData = new FormData(form);
+        const messageDiv = document.getElementById(messageDivId);
+
+        fetch(url, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                messageDiv.innerHTML = `<div class="toast success">${successMessage}</div>`;
+                form.reset();
+                setTimeout(() => location.reload(), 1500);
+            } else {
+                messageDiv.innerHTML = `<div class="toast error">Error: ${data.error || 'An unknown error occurred.'}</div>`;
+            }
+        })
+        .catch(error => {
+            messageDiv.innerHTML = `<div class="toast error">Request failed: ${error.message}</div>`;
+        });
+      }
+
+      // Attach event listeners to forms
+      document.getElementById('addStudentForm').addEventListener('submit', (e) =>
+        handleFormSubmit(e, '/add_student', 'addStudentMessage', 'Student added successfully!')
+      );
+
+      document.getElementById('adminAnnouncementForm').addEventListener('submit', (e) =>
+        handleFormSubmit(e, '/add_announcement', 'adminAnnouncementMessage', 'Announcement posted successfully!')
+      );
+
+      // Update fee status
+      function updateFeeStatus(studentId) {
+          fetch('/update_fee', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ student_id: studentId })
+          })
+          .then(response => response.json())
+          .then(data => {
+              if (data.success) {
+                  alert('Fee status updated! Receipt: ' + data.receipt);
+                  location.reload();
+              } else {
+                  alert('Error updating fee status!');
+              }
+          })
+          .catch(error => {
+              alert('Error: ' + error.message);
+          });
+      }
+    </script>
+  </body>
+</html>

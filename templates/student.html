@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard - College ERP</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="user-info">
+          <h1>Student</h1>
+          <div>
+            <span>Welcome, {{ user.name }}!</span>
+            <a href="/logout" class="logout-btn">Logout</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3>
+            {{ ((student.attendance / student.total_classes) * 100) | round(1)
+            if student.total_classes > 0 else 0 }}%
+          </h3>
+          <p>Attendance</p>
+        </div>
+        <div class="stat-card">
+          <h3>{{ student.fee_status }}</h3>
+          <p>Fee Status</p>
+        </div>
+        <div class="stat-card">
+          <h3>{{ student.hostel_room }}</h3>
+          <p>Hostel Room</p>
+        </div>
+      </div>
+
+      <div class="dashboard-grid">
+        <!-- Personal Information -->
+        <div class="card">
+          <h3>Personal Information</h3>
+          <table>
+            <tr>
+              <td><strong>Student ID:</strong></td>
+              <td>{{ student.id }}</td>
+            </tr>
+            <tr>
+              <td><strong>Name:</strong></td>
+              <td>{{ student.name }}</td>
+            </tr>
+            <tr>
+              <td><strong>Email:</strong></td>
+              <td>{{ student.email }}</td>
+            </tr>
+            <tr>
+              <td><strong>Course:</strong></td>
+              <td>{{ student.course }}</td>
+            </tr>
+            <tr>
+              <td><strong>Year:</strong></td>
+              <td>{{ student.year }}</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Fee Information -->
+        <div class="card">
+          <h3>Fee Information</h3>
+          <table>
+            <tr>
+              <td><strong>Fee Amount:</strong></td>
+              <td>₹{{ student.fee_amount }}</td>
+            </tr>
+            <tr>
+              <td><strong>Status:</strong></td>
+              <td>
+                <span
+                  class="status {{ 'paid' if student.fee_status == 'Paid' else 'unpaid' }}"
+                  >{{ student.fee_status }}</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Hostel Room:</strong></td>
+              <td>{{ student.hostel_room }}</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Attendance -->
+        <div class="card">
+          <h3>Attendance Record</h3>
+          <table>
+            <tr>
+              <td><strong>Classes Attended:</strong></td>
+              <td>{{ student.attendance }}</td>
+            </tr>
+            <tr>
+              <td><strong>Total Classes:</strong></td>
+              <td>{{ student.total_classes }}</td>
+            </tr>
+            <tr>
+              <td><strong>Percentage:</strong></td>
+              <td>
+                {{ ((student.attendance / student.total_classes) * 100) |
+                round(1) if student.total_classes > 0 else 0 }}%
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Exam Schedule -->
+        <div class="card">
+          <h3>Upcoming Exams</h3>
+          {% if exams %}
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Subject</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Type</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for exam in exams %}
+                <tr>
+                  <td>{{ exam.subject }}</td>
+                  <td>{{ exam.date }}</td>
+                  <td>{{ exam.time }}</td>
+                  <td><span class="status present">{{ exam.type }}</span></td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          {% else %}
+          <p>No exams scheduled currently.</p>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- Announcements -->
+      <div class="card">
+        <h3>Recent Announcements</h3>
+        {% if announcements %} {% for announcement in announcements %}
+        <div class="notification">
+          <h4>{{ announcement.title }}</h4>
+          <p>{{ announcement.content }}</p>
+          <small
+            >Posted on: {{ announcement.date }} by {{ announcement.from
+            }}</small
+          >
+        </div>
+        {% endfor %} {% else %}
+        <p>No announcements available.</p>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Chatbot -->
+    <button class="chatbot-toggle" onclick="toggleChatbot()">💬</button>
+
+    <div class="chatbot-container" id="chatbot">
+      <div class="chatbot-header">
+        <span>ERP Assistant</span>
+        <button
+          style="
+            float: right;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+          "
+          onclick="toggleChatbot()"
+        >
+          ✕
+        </button>
+      </div>
+      <div class="chatbot-messages" id="chatMessages">
+        <div
+          style="
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+          "
+        >
+          Hi! I can help you with fee status, exam schedule, attendance, and
+          hostel information. What would you like to know?
+        </div>
+      </div>
+      <div class="chatbot-input">
+        <input
+          type="text"
+          id="chatInput"
+          placeholder="Ask me anything..."
+          onkeypress="handleChatKeypress(event)"
+        />
+        <button onclick="sendMessage()" class="btn btn-info">Send</button>
+      </div>
+    </div>
+
+    <script>
+      function toggleChatbot() {
+        const chatbot = document.getElementById("chatbot");
+        const toggle = document.querySelector(".chatbot-toggle");
+
+        if (chatbot.style.display === "flex") {
+          chatbot.style.display = "none";
+          toggle.style.display = "block";
+        } else {
+          chatbot.style.display = "flex";
+          toggle.style.display = "none";
+        }
+      }
+
+      function handleChatKeypress(event) {
+        if (event.key === "Enter") {
+          sendMessage();
+        }
+      }
+
+      function sendMessage() {
+        const input = document.getElementById("chatInput");
+        const messages = document.getElementById("chatMessages");
+        const query = input.value.trim();
+
+        if (!query) return;
+
+        // Add user message
+        messages.innerHTML += `<div style="text-align: right; margin-bottom: 10px;"><span style="background: #667eea; color: white; padding: 8px 12px; border-radius: 18px; display: inline-block; max-width: 80%;">${query}</span></div>`;
+
+        // Send to backend
+        fetch("/chatbot", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: "query=" + encodeURIComponent(query),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            // Add bot response
+            messages.innerHTML += `<div style="margin-bottom: 10px;"><span style="background: #f0f0f0; padding: 8px 12px; border-radius: 18px; display: inline-block; max-width: 80%;">${data.response}</span></div>`;
+            messages.scrollTop = messages.scrollHeight;
+          });
+
+        input.value = "";
+        messages.scrollTop = messages.scrollHeight;
+      }
+    </script>
+  </body>
+</html>

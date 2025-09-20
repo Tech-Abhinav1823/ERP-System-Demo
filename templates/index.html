@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OrbitCore - Login</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="login-container">
+      <form class="login-form" method="POST" action="/login">
+        <h2>OrbitCore Login</h2>
+
+        {% if request.args.get('error') == 'invalid' %}
+        <div
+          style="
+            background: #fed7d7;
+            color: #742a2a;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+          "
+        >
+          Invalid credentials! Please try again.
+        </div>
+        {% endif %}
+
+        <div class="form-group">
+          <label for="user_type">Login As:</label>
+          <select id="user_type" name="user_type" required>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="admin">Admin</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn-primary">Login</button>
+
+        <div
+          style="
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+          "
+        >
+          <p><strong>Demo Credentials:</strong></p>
+          <p>Student: rahul@college.edu / student123</p>
+          <p>Teacher: amit@college.edu / teacher123</p>
+          <p>Admin: admin@college.edu / admin123</p>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      // Auto-fill demo credentials based on user type selection
+      document
+        .getElementById("user_type")
+        .addEventListener("change", function () {
+          const userType = this.value;
+          const emailField = document.getElementById("email");
+          const passwordField = document.getElementById("password");
+
+          if (userType === "student") {
+            emailField.value = "rahul@college.edu";
+            passwordField.value = "student123";
+          } else if (userType === "teacher") {
+            emailField.value = "amit@college.edu";
+            passwordField.value = "teacher123";
+          } else if (userType === "admin") {
+            emailField.value = "admin@college.edu";
+            passwordField.value = "admin123";
+          }
+        });
+
+      // Set default values on page load
+      window.onload = function () {
+        document.getElementById("email").value = "rahul@college.edu";
+        document.getElementById("password").value = "student123";
+      };
+    </script>
+  </body>
+</html>
