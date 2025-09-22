@@ -51,6 +51,1672 @@
         "Hostel mess fee due",
         "heelo puttcu"
       ]
+    },
+    {
+      "id": "ST004",
+      "name": "John Evans",
+      "email": "student4@college.edu",
+      "password": "student4pass",
+      "course": "Mechanical",
+      "year": 3,
+      "fee_status": "Paid",
+      "fee_amount": 54372,
+      "hostel_room": "C-250",
+      "attendance": 18,
+      "total_classes": 21,
+      "notifications": [
+        "Exam schedule released"
+      ]
+    },
+    {
+      "id": "ST005",
+      "name": "Charles Mckay",
+      "email": "student5@college.edu",
+      "password": "student5pass",
+      "course": "Computer Science",
+      "year": 4,
+      "fee_status": "Unpaid",
+      "fee_amount": 48802,
+      "hostel_room": "D-265",
+      "attendance": 15,
+      "total_classes": 27,
+      "notifications": [
+        "Library books pending",
+        "Fee reminder",
+        "Sports event this weekend"
+      ]
+    },
+    {
+      "id": "ST006",
+      "name": "Angela Odonnell",
+      "email": "student6@college.edu",
+      "password": "student6pass",
+      "course": "Computer Science",
+      "year": 3,
+      "fee_status": "Unpaid",
+      "fee_amount": 51958,
+      "hostel_room": "A-146",
+      "attendance": 12,
+      "total_classes": 21,
+      "notifications": [
+        "Exam schedule released"
+      ]
+    },
+    {
+      "id": "ST007",
+      "name": "Melissa Clements",
+      "email": "student7@college.edu",
+      "password": "student7pass",
+      "course": "Civil",
+      "year": 2,
+      "fee_status": "Paid",
+      "fee_amount": 47701,
+      "hostel_room": "D-230",
+      "attendance": 20,
+      "total_classes": 26,
+      "notifications": [
+        "Sports event this weekend",
+        "Library books pending",
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST008",
+      "name": "Wendy Montgomery",
+      "email": "student8@college.edu",
+      "password": "student8pass",
+      "course": "Electronics",
+      "year": 2,
+      "fee_status": "Paid",
+      "fee_amount": 51972,
+      "hostel_room": "D-243",
+      "attendance": 17,
+      "total_classes": 25,
+      "notifications": [
+        "Fee reminder",
+        "Exam schedule released"
+      ]
+    },
+    {
+      "id": "ST009",
+      "name": "Andrew Jackson",
+      "email": "student9@college.edu",
+      "password": "student9pass",
+      "course": "Civil",
+      "year": 1,
+      "fee_status": "Unpaid",
+      "fee_amount": 57934,
+      "hostel_room": "D-205",
+      "attendance": 17,
+      "total_classes": 22,
+      "notifications": [
+        "Hostel mess fee due",
+        "Sports event this weekend",
+        "Exam schedule released"
+      ]
+    },
+    {
+      "id": "ST010",
+      "name": "Misty Garcia",
+      "email": "student10@college.edu",
+      "password": "student10pass",
+      "course": "Computer Science",
+      "year": 2,
+      "fee_status": "Paid",
+      "fee_amount": 48366,
+      "hostel_room": "B-218",
+      "attendance": 16,
+      "total_classes": 26,
+      "notifications": [
+        "Hostel mess fee due"
+      ]
+    },
+    {
+      "id": "ST011",
+      "name": "Hannah Thomas",
+      "email": "student11@college.edu",
+      "password": "student11pass",
+      "course": "Mechanical",
+      "year": 2,
+      "fee_status": "Paid",
+      "fee_amount": 57512,
+      "hostel_room": "A-210",
+      "attendance": 25,
+      "total_classes": 30,
+      "notifications": [
+        "Exam schedule released",
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST012",
+      "name": "Nathan Roberson",
+      "email": "student12@college.edu",
+      "password": "student12pass",
+      "course": "IT",
+      "year": 3,
+      "fee_status": "Unpaid",
+      "fee_amount": 58828,
+      "hostel_room": "C-350",
+      "attendance": 13,
+      "total_classes": 21,
+      "notifications": [
+        "Sports event this weekend",
+        "Exam schedule released",
+        "Hostel mess fee due"
+      ]
+    },
+    {
+      "id": "ST013",
+      "name": "John Boone",
+      "email": "student13@college.edu",
+      "password": "student13pass",
+      "course": "Civil",
+      "year": 3,
+      "fee_status": "Paid",
+      "fee_amount": 49007,
+      "hostel_room": "C-318",
+      "attendance": 19,
+      "total_classes": 29,
+      "notifications": [
+        "Library books pending",
+        "Hostel mess fee due"
+      ]
+    },
+    {
+      "id": "ST014",
+      "name": "Pedro Ray",
+      "email": "student14@college.edu",
+      "password": "student14pass",
+      "course": "Mechanical",
+      "year": 4,
+      "fee_status": "Unpaid",
+      "fee_amount": 58379,
+      "hostel_room": "A-323",
+      "attendance": 24,
+      "total_classes": 26,
+      "notifications": [
+        "Library books pending",
+        "Exam schedule released"
+      ]
+    },
+    {
+      "id": "ST015",
+      "name": "Deanna Jenkins",
+      "email": "student15@college.edu",
+      "password": "student15pass",
+      "course": "Mechanical",
+      "year": 2,
+      "fee_status": "Paid",
+      "fee_amount": 59723,
+      "hostel_room": "B-198",
+      "attendance": 24,
+      "total_classes": 23,
+      "notifications": [
+        "Library books pending",
+        "Exam schedule released",
+        "Hostel mess fee due"
+      ]
+    },
+    {
+      "id": "ST016",
+      "name": "Ashley Johnston",
+      "email": "student16@college.edu",
+      "password": "student16pass",
+      "course": "Electronics",
+      "year": 1,
+      "fee_status": "Unpaid",
+      "fee_amount": 47418,
+      "hostel_room": "B-389",
+      "attendance": 14,
+      "total_classes": 30,
+      "notifications": [
+        "Hostel mess fee due",
+        "Library books pending"
+      ]
+    },
+    {
+      "id": "ST017",
+      "name": "Christopher French",
+      "email": "student17@college.edu",
+      "password": "student17pass",
+      "course": "Civil",
+      "year": 2,
+      "fee_status": "Unpaid",
+      "fee_amount": 51155,
+      "hostel_room": "D-199",
+      "attendance": 18,
+      "total_classes": 29,
+      "notifications": [
+        "Hostel mess fee due",
+        "Exam schedule released",
+        "Sports event this weekend"
+      ]
+    },
+    {
+      "id": "ST018",
+      "name": "Alicia Smith",
+      "email": "student18@college.edu",
+      "password": "student18pass",
+      "course": "Mechanical",
+      "year": 3,
+      "fee_status": "Unpaid",
+      "fee_amount": 52929,
+      "hostel_room": "C-149",
+      "attendance": 14,
+      "total_classes": 21,
+      "notifications": [
+        "Sports event this weekend",
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST019",
+      "name": "Mike Williams",
+      "email": "student19@college.edu",
+      "password": "student19pass",
+      "course": "Electronics",
+      "year": 3,
+      "fee_status": "Unpaid",
+      "fee_amount": 45990,
+      "hostel_room": "B-336",
+      "attendance": 17,
+      "total_classes": 25,
+      "notifications": [
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST020",
+      "name": "William Miller",
+      "email": "student20@college.edu",
+      "password": "student20pass",
+      "course": "Computer Science",
+      "year": 1,
+      "fee_status": "Paid",
+      "fee_amount": 54999,
+      "hostel_room": "A-361",
+      "attendance": 19,
+      "total_classes": 28,
+      "notifications": [
+        "Exam schedule released"
+      ]
+    },
+    {
+      "id": "ST021",
+      "name": "Loretta Gaines",
+      "email": "student21@college.edu",
+      "password": "student21pass",
+      "course": "Civil",
+      "year": 2,
+      "fee_status": "Unpaid",
+      "fee_amount": 54264,
+      "hostel_room": "B-163",
+      "attendance": 21,
+      "total_classes": 25,
+      "notifications": [
+        "Library books pending",
+        "Fee reminder",
+        "Exam schedule released"
+      ]
+    },
+    {
+      "id": "ST022",
+      "name": "Russell Morrow",
+      "email": "student22@college.edu",
+      "password": "student22pass",
+      "course": "Computer Science",
+      "year": 1,
+      "fee_status": "Unpaid",
+      "fee_amount": 50656,
+      "hostel_room": "B-377",
+      "attendance": 15,
+      "total_classes": 20,
+      "notifications": [
+        "Hostel mess fee due"
+      ]
+    },
+    {
+      "id": "ST023",
+      "name": "Lisa Brock",
+      "email": "student23@college.edu",
+      "password": "student23pass",
+      "course": "IT",
+      "year": 1,
+      "fee_status": "Paid",
+      "fee_amount": 52922,
+      "hostel_room": "C-236",
+      "attendance": 19,
+      "total_classes": 26,
+      "notifications": [
+        "Exam schedule released",
+        "Sports event this weekend",
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST024",
+      "name": "Michael Rich",
+      "email": "student24@college.edu",
+      "password": "student24pass",
+      "course": "IT",
+      "year": 4,
+      "fee_status": "Unpaid",
+      "fee_amount": 52714,
+      "hostel_room": "D-232",
+      "attendance": 22,
+      "total_classes": 24,
+      "notifications": [
+        "Fee reminder",
+        "Sports event this weekend"
+      ]
+    },
+    {
+      "id": "ST025",
+      "name": "Adam Evans",
+      "email": "student25@college.edu",
+      "password": "student25pass",
+      "course": "Electronics",
+      "year": 3,
+      "fee_status": "Paid",
+      "fee_amount": 50785,
+      "hostel_room": "C-200",
+      "attendance": 12,
+      "total_classes": 29,
+      "notifications": [
+        "Library books pending",
+        "Exam schedule released"
+      ]
+    },
+    {
+      "id": "ST026",
+      "name": "Joseph Watkins",
+      "email": "student26@college.edu",
+      "password": "student26pass",
+      "course": "Mechanical",
+      "year": 4,
+      "fee_status": "Paid",
+      "fee_amount": 51895,
+      "hostel_room": "A-177",
+      "attendance": 17,
+      "total_classes": 26,
+      "notifications": [
+        "Exam schedule released"
+      ]
+    },
+    {
+      "id": "ST027",
+      "name": "John Collins",
+      "email": "student27@college.edu",
+      "password": "student27pass",
+      "course": "Civil",
+      "year": 3,
+      "fee_status": "Unpaid",
+      "fee_amount": 52724,
+      "hostel_room": "D-330",
+      "attendance": 15,
+      "total_classes": 27,
+      "notifications": [
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST028",
+      "name": "Frank Rogers",
+      "email": "student28@college.edu",
+      "password": "student28pass",
+      "course": "Computer Science",
+      "year": 4,
+      "fee_status": "Paid",
+      "fee_amount": 45533,
+      "hostel_room": "A-206",
+      "attendance": 18,
+      "total_classes": 28,
+      "notifications": [
+        "Library books pending"
+      ]
+    },
+    {
+      "id": "ST029",
+      "name": "Carla Carter",
+      "email": "student29@college.edu",
+      "password": "student29pass",
+      "course": "Civil",
+      "year": 2,
+      "fee_status": "Unpaid",
+      "fee_amount": 55511,
+      "hostel_room": "A-187",
+      "attendance": 11,
+      "total_classes": 21,
+      "notifications": [
+        "Hostel mess fee due"
+      ]
+    },
+    {
+      "id": "ST030",
+      "name": "Mark Odonnell",
+      "email": "student30@college.edu",
+      "password": "student30pass",
+      "course": "Mechanical",
+      "year": 2,
+      "fee_status": "Unpaid",
+      "fee_amount": 58833,
+      "hostel_room": "A-116",
+      "attendance": 21,
+      "total_classes": 24,
+      "notifications": [
+        "Fee reminder",
+        "Sports event this weekend",
+        "Library books pending"
+      ]
+    },
+    {
+      "id": "ST031",
+      "name": "Tiffany Potter",
+      "email": "student31@college.edu",
+      "password": "student31pass",
+      "course": "Computer Science",
+      "year": 4,
+      "fee_status": "Paid",
+      "fee_amount": 47790,
+      "hostel_room": "B-349",
+      "attendance": 11,
+      "total_classes": 28,
+      "notifications": [
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST032",
+      "name": "Michelle Smith",
+      "email": "student32@college.edu",
+      "password": "student32pass",
+      "course": "IT",
+      "year": 2,
+      "fee_status": "Paid",
+      "fee_amount": 52028,
+      "hostel_room": "D-289",
+      "attendance": 25,
+      "total_classes": 21,
+      "notifications": [
+        "Hostel mess fee due",
+        "Exam schedule released",
+        "Library books pending"
+      ]
+    },
+    {
+      "id": "ST033",
+      "name": "Christy Wilson",
+      "email": "student33@college.edu",
+      "password": "student33pass",
+      "course": "Electronics",
+      "year": 4,
+      "fee_status": "Unpaid",
+      "fee_amount": 52316,
+      "hostel_room": "C-200",
+      "attendance": 21,
+      "total_classes": 30,
+      "notifications": [
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST034",
+      "name": "Jonathan Green",
+      "email": "student34@college.edu",
+      "password": "student34pass",
+      "course": "Electronics",
+      "year": 3,
+      "fee_status": "Paid",
+      "fee_amount": 57777,
+      "hostel_room": "D-330",
+      "attendance": 24,
+      "total_classes": 30,
+      "notifications": [
+        "Exam schedule released",
+        "Library books pending",
+        "Hostel mess fee due"
+      ]
+    },
+    {
+      "id": "ST035",
+      "name": "Austin Martinez",
+      "email": "student35@college.edu",
+      "password": "student35pass",
+      "course": "IT",
+      "year": 4,
+      "fee_status": "Unpaid",
+      "fee_amount": 49534,
+      "hostel_room": "B-308",
+      "attendance": 21,
+      "total_classes": 22,
+      "notifications": [
+        "Sports event this weekend"
+      ]
+    },
+    {
+      "id": "ST036",
+      "name": "Kristen Sanford",
+      "email": "student36@college.edu",
+      "password": "student36pass",
+      "course": "Civil",
+      "year": 3,
+      "fee_status": "Paid",
+      "fee_amount": 46943,
+      "hostel_room": "B-242",
+      "attendance": 16,
+      "total_classes": 23,
+      "notifications": [
+        "Exam schedule released"
+      ]
+    },
+    {
+      "id": "ST037",
+      "name": "Wayne White",
+      "email": "student37@college.edu",
+      "password": "student37pass",
+      "course": "Mechanical",
+      "year": 2,
+      "fee_status": "Unpaid",
+      "fee_amount": 49674,
+      "hostel_room": "C-301",
+      "attendance": 22,
+      "total_classes": 25,
+      "notifications": [
+        "Sports event this weekend"
+      ]
+    },
+    {
+      "id": "ST038",
+      "name": "Mr. Dylan Carpenter",
+      "email": "student38@college.edu",
+      "password": "student38pass",
+      "course": "Electronics",
+      "year": 3,
+      "fee_status": "Paid",
+      "fee_amount": 53223,
+      "hostel_room": "B-296",
+      "attendance": 13,
+      "total_classes": 26,
+      "notifications": [
+        "Sports event this weekend",
+        "Library books pending"
+      ]
+    },
+    {
+      "id": "ST039",
+      "name": "Cassandra Smith",
+      "email": "student39@college.edu",
+      "password": "student39pass",
+      "course": "IT",
+      "year": 4,
+      "fee_status": "Unpaid",
+      "fee_amount": 51454,
+      "hostel_room": "A-281",
+      "attendance": 23,
+      "total_classes": 28,
+      "notifications": [
+        "Exam schedule released",
+        "Sports event this weekend"
+      ]
+    },
+    {
+      "id": "ST040",
+      "name": "Raymond Thomas",
+      "email": "student40@college.edu",
+      "password": "student40pass",
+      "course": "Mechanical",
+      "year": 2,
+      "fee_status": "Paid",
+      "fee_amount": 58207,
+      "hostel_room": "A-245",
+      "attendance": 17,
+      "total_classes": 20,
+      "notifications": [
+        "Fee reminder",
+        "Library books pending",
+        "Hostel mess fee due"
+      ]
+    },
+    {
+      "id": "ST041",
+      "name": "James Harris Jr.",
+      "email": "student41@college.edu",
+      "password": "student41pass",
+      "course": "IT",
+      "year": 1,
+      "fee_status": "Paid",
+      "fee_amount": 48193,
+      "hostel_room": "A-127",
+      "attendance": 19,
+      "total_classes": 28,
+      "notifications": [
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST042",
+      "name": "Mrs. Anna Edwards",
+      "email": "student42@college.edu",
+      "password": "student42pass",
+      "course": "IT",
+      "year": 4,
+      "fee_status": "Unpaid",
+      "fee_amount": 49236,
+      "hostel_room": "A-249",
+      "attendance": 13,
+      "total_classes": 30,
+      "notifications": [
+        "Library books pending"
+      ]
+    },
+    {
+      "id": "ST043",
+      "name": "Sarah Young",
+      "email": "student43@college.edu",
+      "password": "student43pass",
+      "course": "Mechanical",
+      "year": 2,
+      "fee_status": "Paid",
+      "fee_amount": 45389,
+      "hostel_room": "D-138",
+      "attendance": 14,
+      "total_classes": 23,
+      "notifications": [
+        "Fee reminder",
+        "Exam schedule released"
+      ]
+    },
+    {
+      "id": "ST044",
+      "name": "Christopher Brewer",
+      "email": "student44@college.edu",
+      "password": "student44pass",
+      "course": "Computer Science",
+      "year": 1,
+      "fee_status": "Paid",
+      "fee_amount": 57893,
+      "hostel_room": "D-117",
+      "attendance": 19,
+      "total_classes": 21,
+      "notifications": [
+        "Fee reminder",
+        "Hostel mess fee due"
+      ]
+    },
+    {
+      "id": "ST045",
+      "name": "Jeremiah Gaines",
+      "email": "student45@college.edu",
+      "password": "student45pass",
+      "course": "Electronics",
+      "year": 4,
+      "fee_status": "Paid",
+      "fee_amount": 57526,
+      "hostel_room": "D-166",
+      "attendance": 15,
+      "total_classes": 23,
+      "notifications": [
+        "Exam schedule released",
+        "Hostel mess fee due",
+        "Sports event this weekend"
+      ]
+    },
+    {
+      "id": "ST046",
+      "name": "Justin Benjamin",
+      "email": "student46@college.edu",
+      "password": "student46pass",
+      "course": "Computer Science",
+      "year": 3,
+      "fee_status": "Unpaid",
+      "fee_amount": 49765,
+      "hostel_room": "A-212",
+      "attendance": 25,
+      "total_classes": 25,
+      "notifications": [
+        "Sports event this weekend",
+        "Hostel mess fee due",
+        "Exam schedule released"
+      ]
+    },
+    {
+      "id": "ST047",
+      "name": "Gerald Patterson",
+      "email": "student47@college.edu",
+      "password": "student47pass",
+      "course": "Civil",
+      "year": 4,
+      "fee_status": "Unpaid",
+      "fee_amount": 51186,
+      "hostel_room": "A-186",
+      "attendance": 10,
+      "total_classes": 30,
+      "notifications": [
+        "Sports event this weekend",
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST048",
+      "name": "Janet Brown",
+      "email": "student48@college.edu",
+      "password": "student48pass",
+      "course": "Civil",
+      "year": 3,
+      "fee_status": "Unpaid",
+      "fee_amount": 48955,
+      "hostel_room": "A-147",
+      "attendance": 17,
+      "total_classes": 30,
+      "notifications": [
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST049",
+      "name": "Alicia Clarke",
+      "email": "student49@college.edu",
+      "password": "student49pass",
+      "course": "Computer Science",
+      "year": 4,
+      "fee_status": "Unpaid",
+      "fee_amount": 46199,
+      "hostel_room": "D-393",
+      "attendance": 13,
+      "total_classes": 25,
+      "notifications": [
+        "Library books pending",
+        "Hostel mess fee due",
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST050",
+      "name": "Taylor Mcgee",
+      "email": "student50@college.edu",
+      "password": "student50pass",
+      "course": "IT",
+      "year": 1,
+      "fee_status": "Unpaid",
+      "fee_amount": 45362,
+      "hostel_room": "D-155",
+      "attendance": 15,
+      "total_classes": 20,
+      "notifications": [
+        "Hostel mess fee due",
+        "Exam schedule released",
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST051",
+      "name": "Patrick Thompson",
+      "email": "student51@college.edu",
+      "password": "student51pass",
+      "course": "Computer Science",
+      "year": 2,
+      "fee_status": "Paid",
+      "fee_amount": 52848,
+      "hostel_room": "D-366",
+      "attendance": 24,
+      "total_classes": 26,
+      "notifications": [
+        "Fee reminder",
+        "Exam schedule released"
+      ]
+    },
+    {
+      "id": "ST052",
+      "name": "Alyssa Lewis",
+      "email": "student52@college.edu",
+      "password": "student52pass",
+      "course": "Computer Science",
+      "year": 3,
+      "fee_status": "Paid",
+      "fee_amount": 51970,
+      "hostel_room": "B-143",
+      "attendance": 22,
+      "total_classes": 28,
+      "notifications": [
+        "Library books pending",
+        "Fee reminder",
+        "Sports event this weekend"
+      ]
+    },
+    {
+      "id": "ST053",
+      "name": "Michael Branch",
+      "email": "student53@college.edu",
+      "password": "student53pass",
+      "course": "Mechanical",
+      "year": 1,
+      "fee_status": "Unpaid",
+      "fee_amount": 51755,
+      "hostel_room": "A-397",
+      "attendance": 20,
+      "total_classes": 25,
+      "notifications": [
+        "Exam schedule released",
+        "Fee reminder",
+        "Sports event this weekend"
+      ]
+    },
+    {
+      "id": "ST054",
+      "name": "Susan Moore",
+      "email": "student54@college.edu",
+      "password": "student54pass",
+      "course": "Electronics",
+      "year": 2,
+      "fee_status": "Unpaid",
+      "fee_amount": 49642,
+      "hostel_room": "A-160",
+      "attendance": 24,
+      "total_classes": 29,
+      "notifications": [
+        "Exam schedule released",
+        "Hostel mess fee due",
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST055",
+      "name": "Natasha Taylor",
+      "email": "student55@college.edu",
+      "password": "student55pass",
+      "course": "Civil",
+      "year": 2,
+      "fee_status": "Unpaid",
+      "fee_amount": 57054,
+      "hostel_room": "D-274",
+      "attendance": 16,
+      "total_classes": 26,
+      "notifications": [
+        "Sports event this weekend"
+      ]
+    },
+    {
+      "id": "ST056",
+      "name": "Scott Harris",
+      "email": "student56@college.edu",
+      "password": "student56pass",
+      "course": "IT",
+      "year": 4,
+      "fee_status": "Unpaid",
+      "fee_amount": 46317,
+      "hostel_room": "D-348",
+      "attendance": 15,
+      "total_classes": 27,
+      "notifications": [
+        "Fee reminder",
+        "Exam schedule released"
+      ]
+    },
+    {
+      "id": "ST057",
+      "name": "Raymond Ramsey",
+      "email": "student57@college.edu",
+      "password": "student57pass",
+      "course": "IT",
+      "year": 4,
+      "fee_status": "Paid",
+      "fee_amount": 49172,
+      "hostel_room": "B-264",
+      "attendance": 19,
+      "total_classes": 20,
+      "notifications": [
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST058",
+      "name": "Jeremy Jones",
+      "email": "student58@college.edu",
+      "password": "student58pass",
+      "course": "IT",
+      "year": 3,
+      "fee_status": "Paid",
+      "fee_amount": 57906,
+      "hostel_room": "B-151",
+      "attendance": 25,
+      "total_classes": 23,
+      "notifications": [
+        "Exam schedule released",
+        "Library books pending",
+        "Hostel mess fee due"
+      ]
+    },
+    {
+      "id": "ST059",
+      "name": "Gerald Jones",
+      "email": "student59@college.edu",
+      "password": "student59pass",
+      "course": "Civil",
+      "year": 2,
+      "fee_status": "Paid",
+      "fee_amount": 49350,
+      "hostel_room": "D-263",
+      "attendance": 25,
+      "total_classes": 26,
+      "notifications": [
+        "Sports event this weekend"
+      ]
+    },
+    {
+      "id": "ST060",
+      "name": "Bradley George",
+      "email": "student60@college.edu",
+      "password": "student60pass",
+      "course": "Mechanical",
+      "year": 4,
+      "fee_status": "Paid",
+      "fee_amount": 53560,
+      "hostel_room": "C-249",
+      "attendance": 15,
+      "total_classes": 26,
+      "notifications": [
+        "Sports event this weekend",
+        "Library books pending"
+      ]
+    },
+    {
+      "id": "ST061",
+      "name": "Diana Oliver",
+      "email": "student61@college.edu",
+      "password": "student61pass",
+      "course": "Mechanical",
+      "year": 3,
+      "fee_status": "Unpaid",
+      "fee_amount": 53244,
+      "hostel_room": "D-363",
+      "attendance": 20,
+      "total_classes": 26,
+      "notifications": [
+        "Hostel mess fee due",
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST062",
+      "name": "Lisa Johnson",
+      "email": "student62@college.edu",
+      "password": "student62pass",
+      "course": "Civil",
+      "year": 1,
+      "fee_status": "Unpaid",
+      "fee_amount": 49487,
+      "hostel_room": "C-181",
+      "attendance": 18,
+      "total_classes": 28,
+      "notifications": [
+        "Library books pending",
+        "Sports event this weekend",
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST063",
+      "name": "John Porter",
+      "email": "student63@college.edu",
+      "password": "student63pass",
+      "course": "Civil",
+      "year": 2,
+      "fee_status": "Unpaid",
+      "fee_amount": 47935,
+      "hostel_room": "C-230",
+      "attendance": 17,
+      "total_classes": 23,
+      "notifications": [
+        "Fee reminder",
+        "Hostel mess fee due",
+        "Library books pending"
+      ]
+    },
+    {
+      "id": "ST064",
+      "name": "Jason Bennett",
+      "email": "student64@college.edu",
+      "password": "student64pass",
+      "course": "IT",
+      "year": 1,
+      "fee_status": "Unpaid",
+      "fee_amount": 47247,
+      "hostel_room": "D-202",
+      "attendance": 15,
+      "total_classes": 27,
+      "notifications": [
+        "Library books pending",
+        "Sports event this weekend"
+      ]
+    },
+    {
+      "id": "ST065",
+      "name": "Michael Flores",
+      "email": "student65@college.edu",
+      "password": "student65pass",
+      "course": "IT",
+      "year": 2,
+      "fee_status": "Unpaid",
+      "fee_amount": 53488,
+      "hostel_room": "D-399",
+      "attendance": 13,
+      "total_classes": 22,
+      "notifications": [
+        "Hostel mess fee due",
+        "Sports event this weekend",
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST066",
+      "name": "Xavier Warner",
+      "email": "student66@college.edu",
+      "password": "student66pass",
+      "course": "IT",
+      "year": 4,
+      "fee_status": "Paid",
+      "fee_amount": 56969,
+      "hostel_room": "B-268",
+      "attendance": 25,
+      "total_classes": 28,
+      "notifications": [
+        "Sports event this weekend",
+        "Exam schedule released"
+      ]
+    },
+    {
+      "id": "ST067",
+      "name": "Kevin Baker",
+      "email": "student67@college.edu",
+      "password": "student67pass",
+      "course": "Mechanical",
+      "year": 3,
+      "fee_status": "Paid",
+      "fee_amount": 53224,
+      "hostel_room": "A-125",
+      "attendance": 19,
+      "total_classes": 21,
+      "notifications": [
+        "Fee reminder",
+        "Sports event this weekend"
+      ]
+    },
+    {
+      "id": "ST068",
+      "name": "Rebecca Hardin",
+      "email": "student68@college.edu",
+      "password": "student68pass",
+      "course": "Civil",
+      "year": 2,
+      "fee_status": "Unpaid",
+      "fee_amount": 46417,
+      "hostel_room": "B-361",
+      "attendance": 11,
+      "total_classes": 27,
+      "notifications": [
+        "Hostel mess fee due"
+      ]
+    },
+    {
+      "id": "ST069",
+      "name": "David Bell",
+      "email": "student69@college.edu",
+      "password": "student69pass",
+      "course": "Civil",
+      "year": 1,
+      "fee_status": "Unpaid",
+      "fee_amount": 50914,
+      "hostel_room": "C-110",
+      "attendance": 11,
+      "total_classes": 28,
+      "notifications": [
+        "Hostel mess fee due",
+        "Exam schedule released",
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST070",
+      "name": "Steven Huffman",
+      "email": "student70@college.edu",
+      "password": "student70pass",
+      "course": "Civil",
+      "year": 3,
+      "fee_status": "Paid",
+      "fee_amount": 59340,
+      "hostel_room": "A-368",
+      "attendance": 15,
+      "total_classes": 30,
+      "notifications": [
+        "Hostel mess fee due",
+        "Sports event this weekend"
+      ]
+    },
+    {
+      "id": "ST071",
+      "name": "Austin Alexander",
+      "email": "student71@college.edu",
+      "password": "student71pass",
+      "course": "Electronics",
+      "year": 1,
+      "fee_status": "Paid",
+      "fee_amount": 52949,
+      "hostel_room": "D-305",
+      "attendance": 10,
+      "total_classes": 25,
+      "notifications": [
+        "Exam schedule released",
+        "Sports event this weekend",
+        "Library books pending"
+      ]
+    },
+    {
+      "id": "ST072",
+      "name": "Lindsey Miller",
+      "email": "student72@college.edu",
+      "password": "student72pass",
+      "course": "Civil",
+      "year": 2,
+      "fee_status": "Paid",
+      "fee_amount": 48881,
+      "hostel_room": "D-251",
+      "attendance": 25,
+      "total_classes": 29,
+      "notifications": [
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST073",
+      "name": "Melissa Cruz",
+      "email": "student73@college.edu",
+      "password": "student73pass",
+      "course": "Electronics",
+      "year": 2,
+      "fee_status": "Unpaid",
+      "fee_amount": 59949,
+      "hostel_room": "A-136",
+      "attendance": 24,
+      "total_classes": 27,
+      "notifications": [
+        "Library books pending",
+        "Fee reminder",
+        "Exam schedule released"
+      ]
+    },
+    {
+      "id": "ST074",
+      "name": "Brooke Harris",
+      "email": "student74@college.edu",
+      "password": "student74pass",
+      "course": "Electronics",
+      "year": 4,
+      "fee_status": "Paid",
+      "fee_amount": 51657,
+      "hostel_room": "B-298",
+      "attendance": 14,
+      "total_classes": 28,
+      "notifications": [
+        "Hostel mess fee due",
+        "Library books pending",
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST075",
+      "name": "Sharon West",
+      "email": "student75@college.edu",
+      "password": "student75pass",
+      "course": "Civil",
+      "year": 1,
+      "fee_status": "Unpaid",
+      "fee_amount": 46542,
+      "hostel_room": "B-370",
+      "attendance": 10,
+      "total_classes": 27,
+      "notifications": [
+        "Exam schedule released",
+        "Fee reminder",
+        "Hostel mess fee due"
+      ]
+    },
+    {
+      "id": "ST076",
+      "name": "Megan Davis",
+      "email": "student76@college.edu",
+      "password": "student76pass",
+      "course": "Electronics",
+      "year": 1,
+      "fee_status": "Unpaid",
+      "fee_amount": 51739,
+      "hostel_room": "A-362",
+      "attendance": 24,
+      "total_classes": 30,
+      "notifications": [
+        "Library books pending"
+      ]
+    },
+    {
+      "id": "ST077",
+      "name": "Michael Jones",
+      "email": "student77@college.edu",
+      "password": "student77pass",
+      "course": "Electronics",
+      "year": 2,
+      "fee_status": "Paid",
+      "fee_amount": 59424,
+      "hostel_room": "D-251",
+      "attendance": 11,
+      "total_classes": 25,
+      "notifications": [
+        "Hostel mess fee due",
+        "Fee reminder",
+        "Sports event this weekend"
+      ]
+    },
+    {
+      "id": "ST078",
+      "name": "James Owens",
+      "email": "student78@college.edu",
+      "password": "student78pass",
+      "course": "Computer Science",
+      "year": 2,
+      "fee_status": "Paid",
+      "fee_amount": 58734,
+      "hostel_room": "D-276",
+      "attendance": 21,
+      "total_classes": 24,
+      "notifications": [
+        "Hostel mess fee due",
+        "Exam schedule released"
+      ]
+    },
+    {
+      "id": "ST079",
+      "name": "Tony Gardner",
+      "email": "student79@college.edu",
+      "password": "student79pass",
+      "course": "Electronics",
+      "year": 1,
+      "fee_status": "Unpaid",
+      "fee_amount": 55925,
+      "hostel_room": "A-292",
+      "attendance": 15,
+      "total_classes": 28,
+      "notifications": [
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST080",
+      "name": "Kathryn Murillo",
+      "email": "student80@college.edu",
+      "password": "student80pass",
+      "course": "Electronics",
+      "year": 3,
+      "fee_status": "Unpaid",
+      "fee_amount": 55091,
+      "hostel_room": "C-196",
+      "attendance": 11,
+      "total_classes": 30,
+      "notifications": [
+        "Sports event this weekend"
+      ]
+    },
+    {
+      "id": "ST081",
+      "name": "Amy Thompson",
+      "email": "student81@college.edu",
+      "password": "student81pass",
+      "course": "Computer Science",
+      "year": 4,
+      "fee_status": "Paid",
+      "fee_amount": 57659,
+      "hostel_room": "D-215",
+      "attendance": 17,
+      "total_classes": 22,
+      "notifications": [
+        "Library books pending",
+        "Hostel mess fee due"
+      ]
+    },
+    {
+      "id": "ST082",
+      "name": "Kevin Cline",
+      "email": "student82@college.edu",
+      "password": "student82pass",
+      "course": "Mechanical",
+      "year": 4,
+      "fee_status": "Paid",
+      "fee_amount": 53215,
+      "hostel_room": "D-173",
+      "attendance": 11,
+      "total_classes": 20,
+      "notifications": [
+        "Fee reminder",
+        "Exam schedule released"
+      ]
+    },
+    {
+      "id": "ST083",
+      "name": "Lorraine Brown",
+      "email": "student83@college.edu",
+      "password": "student83pass",
+      "course": "Civil",
+      "year": 1,
+      "fee_status": "Paid",
+      "fee_amount": 45660,
+      "hostel_room": "A-205",
+      "attendance": 11,
+      "total_classes": 23,
+      "notifications": [
+        "Hostel mess fee due"
+      ]
+    },
+    {
+      "id": "ST084",
+      "name": "Miss Stacy Walters MD",
+      "email": "student84@college.edu",
+      "password": "student84pass",
+      "course": "IT",
+      "year": 2,
+      "fee_status": "Paid",
+      "fee_amount": 48086,
+      "hostel_room": "C-213",
+      "attendance": 14,
+      "total_classes": 23,
+      "notifications": [
+        "Hostel mess fee due"
+      ]
+    },
+    {
+      "id": "ST085",
+      "name": "Carla Johnson",
+      "email": "student85@college.edu",
+      "password": "student85pass",
+      "course": "Civil",
+      "year": 3,
+      "fee_status": "Unpaid",
+      "fee_amount": 59245,
+      "hostel_room": "B-189",
+      "attendance": 11,
+      "total_classes": 30,
+      "notifications": [
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST086",
+      "name": "Diane Sexton",
+      "email": "student86@college.edu",
+      "password": "student86pass",
+      "course": "Civil",
+      "year": 1,
+      "fee_status": "Paid",
+      "fee_amount": 55576,
+      "hostel_room": "A-253",
+      "attendance": 22,
+      "total_classes": 21,
+      "notifications": [
+        "Library books pending",
+        "Hostel mess fee due",
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST087",
+      "name": "Stephanie Thomas",
+      "email": "student87@college.edu",
+      "password": "student87pass",
+      "course": "Computer Science",
+      "year": 4,
+      "fee_status": "Paid",
+      "fee_amount": 47307,
+      "hostel_room": "C-188",
+      "attendance": 15,
+      "total_classes": 21,
+      "notifications": [
+        "Sports event this weekend",
+        "Library books pending"
+      ]
+    },
+    {
+      "id": "ST088",
+      "name": "Mary Clark",
+      "email": "student88@college.edu",
+      "password": "student88pass",
+      "course": "Computer Science",
+      "year": 2,
+      "fee_status": "Paid",
+      "fee_amount": 49280,
+      "hostel_room": "C-252",
+      "attendance": 24,
+      "total_classes": 20,
+      "notifications": [
+        "Fee reminder",
+        "Hostel mess fee due"
+      ]
+    },
+    {
+      "id": "ST089",
+      "name": "Stephanie Robinson",
+      "email": "student89@college.edu",
+      "password": "student89pass",
+      "course": "Mechanical",
+      "year": 3,
+      "fee_status": "Paid",
+      "fee_amount": 47116,
+      "hostel_room": "C-360",
+      "attendance": 16,
+      "total_classes": 24,
+      "notifications": [
+        "Exam schedule released",
+        "Sports event this weekend"
+      ]
+    },
+    {
+      "id": "ST090",
+      "name": "Terri Anderson",
+      "email": "student90@college.edu",
+      "password": "student90pass",
+      "course": "IT",
+      "year": 3,
+      "fee_status": "Unpaid",
+      "fee_amount": 51269,
+      "hostel_room": "C-168",
+      "attendance": 12,
+      "total_classes": 29,
+      "notifications": [
+        "Exam schedule released",
+        "Library books pending",
+        "Sports event this weekend"
+      ]
+    },
+    {
+      "id": "ST091",
+      "name": "Tracy Miller",
+      "email": "student91@college.edu",
+      "password": "student91pass",
+      "course": "Computer Science",
+      "year": 4,
+      "fee_status": "Unpaid",
+      "fee_amount": 49872,
+      "hostel_room": "A-226",
+      "attendance": 14,
+      "total_classes": 27,
+      "notifications": [
+        "Sports event this weekend",
+        "Hostel mess fee due",
+        "Exam schedule released"
+      ]
+    },
+    {
+      "id": "ST092",
+      "name": "Alex Phillips",
+      "email": "student92@college.edu",
+      "password": "student92pass",
+      "course": "Electronics",
+      "year": 1,
+      "fee_status": "Paid",
+      "fee_amount": 50608,
+      "hostel_room": "C-323",
+      "attendance": 24,
+      "total_classes": 30,
+      "notifications": [
+        "Library books pending",
+        "Sports event this weekend"
+      ]
+    },
+    {
+      "id": "ST093",
+      "name": "Tracy Carrillo",
+      "email": "student93@college.edu",
+      "password": "student93pass",
+      "course": "Civil",
+      "year": 1,
+      "fee_status": "Paid",
+      "fee_amount": 49454,
+      "hostel_room": "C-122",
+      "attendance": 16,
+      "total_classes": 23,
+      "notifications": [
+        "Fee reminder",
+        "Library books pending",
+        "Sports event this weekend"
+      ]
+    },
+    {
+      "id": "ST094",
+      "name": "Anthony Rivera",
+      "email": "student94@college.edu",
+      "password": "student94pass",
+      "course": "Electronics",
+      "year": 2,
+      "fee_status": "Paid",
+      "fee_amount": 50161,
+      "hostel_room": "A-261",
+      "attendance": 13,
+      "total_classes": 21,
+      "notifications": [
+        "Exam schedule released",
+        "Library books pending",
+        "Hostel mess fee due"
+      ]
+    },
+    {
+      "id": "ST095",
+      "name": "Brian Dunn",
+      "email": "student95@college.edu",
+      "password": "student95pass",
+      "course": "IT",
+      "year": 4,
+      "fee_status": "Paid",
+      "fee_amount": 45242,
+      "hostel_room": "B-343",
+      "attendance": 13,
+      "total_classes": 25,
+      "notifications": [
+        "Hostel mess fee due"
+      ]
+    },
+    {
+      "id": "ST096",
+      "name": "Tony Stevens",
+      "email": "student96@college.edu",
+      "password": "student96pass",
+      "course": "Mechanical",
+      "year": 1,
+      "fee_status": "Unpaid",
+      "fee_amount": 54149,
+      "hostel_room": "C-102",
+      "attendance": 15,
+      "total_classes": 22,
+      "notifications": [
+        "Hostel mess fee due",
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST097",
+      "name": "Joseph Hendricks",
+      "email": "student97@college.edu",
+      "password": "student97pass",
+      "course": "Civil",
+      "year": 2,
+      "fee_status": "Paid",
+      "fee_amount": 59598,
+      "hostel_room": "D-345",
+      "attendance": 17,
+      "total_classes": 20,
+      "notifications": [
+        "Hostel mess fee due",
+        "Library books pending"
+      ]
+    },
+    {
+      "id": "ST098",
+      "name": "Caroline Mendoza",
+      "email": "student98@college.edu",
+      "password": "student98pass",
+      "course": "IT",
+      "year": 1,
+      "fee_status": "Paid",
+      "fee_amount": 58305,
+      "hostel_room": "C-127",
+      "attendance": 19,
+      "total_classes": 30,
+      "notifications": [
+        "Hostel mess fee due"
+      ]
+    },
+    {
+      "id": "ST099",
+      "name": "Lisa Thomas",
+      "email": "student99@college.edu",
+      "password": "student99pass",
+      "course": "Electronics",
+      "year": 3,
+      "fee_status": "Unpaid",
+      "fee_amount": 59316,
+      "hostel_room": "C-286",
+      "attendance": 16,
+      "total_classes": 29,
+      "notifications": [
+        "Sports event this weekend",
+        "Exam schedule released",
+        "Library books pending"
+      ]
+    },
+    {
+      "id": "ST100",
+      "name": "Alexander Allen",
+      "email": "student100@college.edu",
+      "password": "student100pass",
+      "course": "Civil",
+      "year": 1,
+      "fee_status": "Paid",
+      "fee_amount": 47186,
+      "hostel_room": "C-209",
+      "attendance": 16,
+      "total_classes": 23,
+      "notifications": [
+        "Fee reminder"
+      ]
+    },
+    {
+      "id": "ST101",
+      "name": "Abhinav Rai",
+      "email": "abhi@college.edu",
+      "password": "student123",
+      "course": "Computer Science",
+      "year": 1,
+      "fee_status": "Unpaid",
+      "fee_amount": 10000,
+      "hostel_room": "A-101",
+      "attendance": 0,
+      "total_classes": 0,
+      "notifications": []
     }
   ],
   "teachers": [
@@ -116,9 +1782,9 @@
     }
   ],
   "fee_stats": {
-    "total_students": 3,
-    "paid": 1,
-    "unpaid": 2
+    "total_students": 101,
+    "paid": 52,
+    "unpaid": 49
   },
   "hostel_rooms": {
     "occupied": 152,
